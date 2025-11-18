@@ -1,0 +1,169 @@
+@import url(main.css);
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem;
+  background-color: var(--cor-nav-bar);
+}
+
+.usuario {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.usuario img {
+  width: 10vw;
+  border-radius: 10rem;
+}
+
+.usuario p {
+  font-weight: bold;
+  color: var(--cor-secundaria);
+}
+
+/* apliquei isto pois estava aparecendo um sublinhado de link nas imagens */
+.icones-nav-bar a {
+  text-decoration: none;
+}
+
+.icones-nav-bar img {
+  width: 6vw;
+}
+
+.banner {
+  padding: 0.5rem;
+}
+
+.banner img {
+  /* essa config para fazer com que a imagem pare de ocupar o espaço invisivel e empurrar o layout */
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+  border-radius: 1rem;
+}
+
+.container {
+  padding: 1rem;
+}
+
+.explore-nossas-opcoes h3 {
+  margin: 1rem;
+  color: var(--cor-secundaria);
+}
+
+.opcoes {
+  background-color: var(--cor-nav-bar);
+  padding: 1rem 0rem;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.opcao {
+  text-align: center;
+}
+
+.opcao img {
+  width: 22vw;
+  height: 10vh;
+  border-radius: 50%;
+}
+
+.opcao p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: var(--cor-secundaria);
+}
+.opcao a {
+ text-decoration: none;
+}
+
+.titulo-e-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+
+.titulo-e-link a, .titulo-e-link h3 {
+  color: var(--cor-secundaria);
+  text-decoration: none;
+}
+
+.hospitais {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hospital {
+  border-bottom: 1px solid var(--cinza-claro);
+  padding-bottom:1rem ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lado-esquerdo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+.lado-direito {
+  margin-right: 1rem;
+}
+
+.img-hospital-proximo  {
+  width: 15vw;
+  height: 8vh;
+  border-radius: 50%;
+}
+
+.desc-hospital p {
+  font-weight: semibold;
+  color: var(--cor-secundaria);
+}
+
+.titulo-tempo-espera span {
+  color: var(--subtitulo-campo-formulario-login);
+  /* font-weight: bold; */
+}
+
+.estrela-avaliacao {
+  width: 2vw;
+}
+
+.avaliacao{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.avaliacao span {
+  color: var(--cor-secundaria);
+  font-weight: bold;
+}
+
+.avaliacao img {
+  width: 5vw;
+}
+
+.botao-acessar {
+  background-color: var(--cor-secundaria);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: .5rem;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.botao-acessar:hover {
+  background-color: darken(var(--cor-secundaria), 10%);
+}

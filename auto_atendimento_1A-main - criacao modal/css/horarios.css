@@ -1,0 +1,89 @@
+@import url(main.css);
+@import url(formulario-login.css);
+
+/*Cabeçalho*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem;
+  background-color: var(--cor-nav-bar);
+}
+
+.usuario {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.usuario img {
+  width: 10vw;
+  border-radius: 10rem;
+}
+
+.usuario p {
+  font-weight: bold;
+  color: var(--cor-secundaria);
+}
+
+/* apliquei isto pois estava aparecendo u   m sublinhado de link nas imagens */
+.icones-nav-bar a {
+  text-decoration: none;
+}
+
+.icones-nav-bar img {
+  width: 6vw;
+}
+
+.banner {
+  padding: 0.5rem;
+}
+
+.banner img {
+  /* essa config para fazer com que a imagem pare de ocupar o espaço invisivel e empurrar o layout */
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+  border-radius: 1rem;
+}
+
+.container {
+  padding: 1rem;
+}
+/*main*/
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 35px;
+}
+.container_horarios {
+  width: 300px;
+  height: 175px;
+  border-radius: 15px;
+}
+
+#modal-agendar {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  border: none;
+  border-radius: 12px;
+  padding: 30px;
+  background: white;
+}
+
+#modal-agendar::backdrop{
+  background-color: rgba(0, 0, 0, 0.5)
+}
+
+#modal-agendar h3{
+  color: var(--cor-secundaria);
+  font-weight: bold;
+}

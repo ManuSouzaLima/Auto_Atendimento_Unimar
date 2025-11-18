@@ -1,0 +1,36 @@
+@import url(main.css);
+@import url(formulario-login.css);
+@import url(essenciais.css);
+@import url(index.css);
+
+header{
+    margin: 0 1rem;
+}
+
+.logo {
+    margin-top: 2rem;
+    width: 100px;
+    display: block
+}
+
+.container {
+    margin: 2rem;
+}
+
+.formulario-login {
+    margin-top: 2rem;
+}
+
+.input-label {
+    color: var(--subtitulo-campo-formulario-login);
+}
+
+.input-icon {
+    width:2rem;
+}
+
+.esqueceu-senha a {
+    color: var(--subtitulo-campo-formulario-login);
+    text-decoration: none;
+}
+
